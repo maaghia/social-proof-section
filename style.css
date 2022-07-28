@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+body {
+    height:100vh;
+    font-size: 18px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 160px;
+    padding-right: 160px;
+    background-image: url(images/bg-pattern-top-desktop.svg) and url(images/bg-pattern-bottom-desktop.svg);
+}
+main{
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;    
+}
+
+
+.profiles{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.colton, .irene, .anne{
+    background-color: hsl(300, 43%, 22%);
+    width: 320px;
+    height: 240px;
+    padding: 30px;
+    border-radius: 10px;
+}
+.irene{
+    position: relative;
+    top: 15px;
+}
+.anne{
+    position: relative;
+    top: 30px;
+}
+.up{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.up img{
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+}
+.up .name{
+    padding-left: 30px;
+}
+
+.up h1{
+    color: white;
+    font-size: 18px;
+}
+.up p{
+    color: hsl(333, 80%, 67%);
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 100;
+}
+.down {
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+    padding-top: 20px;
+}
+.left{
+    width: 420px;
+    height: 260px;
+}
+.title{
+    font-weight: 700;
+    font-size: 28px;
+    color: hsl(300, 43%, 22%);
+}
+.text{
+    font-weight: 500;
+    font-size: 18px;
+    color: hsl(303, 10%, 53%);
+    padding-right: 50px;
+    padding-top: 30px;
+}
+.upper{
+    display: flex;
+    gap: 100px;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.review, .report, .tech{
+    background-color: hsl(300, 24%, 96%);
+    width: 440px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.report{
+    position: relative;  
+    right: -15px; 
+}
+.tech{
+    position: relative;  
+    right: -30px; 
+}
+.right p{
+    color: hsl(300, 43%, 22%);
+    font-size: 18px;
+    font-weight: 700;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and ( max-width:1000px){
+    body{
+        height: max-content;
+        display: flex;
+        margin-bottom: 100px;
+    }
+    .upper{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 0;
+    }
+    .text{
+        padding: 0;
+    }
+    .title{
+        font-size: 20px;
+        padding-top: 30px;
+        margin: 30px 0px;
+    }
+    .profiles{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .colton, .irene, .anne{
+        width: 340px;
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .report, .tech{
+        position: static;
+    }
+    .report, .tech, .review{
+        display: flex;
+        flex-direction: column;
+        width: 340px;
+        height: 70px;
+        padding: 0px 0px;
+    }
+    
+    footer{
+        display: block;
+    }
+}
